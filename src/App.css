@@ -1,5 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+}
+
+.logo {
+  padding: 10px 20px;
+  font-weight: unset;
+  font-size: 30px;
+  color: rgb(44, 44, 44);
+  text-align: left;
+}
+
+main {
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+  }
+}
+
+main div svg {
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: unset;
+  color: rgb(255, 126, 126);
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: unset;
+  color: rgb(101, 101, 245);
+}
+
+#bulb {
+  animation: float 1s ease-in-out infinite alternate;
+}
+#board {
+  animation: float 1.2s ease-in-out infinite alternate;
+}
+#envelop {
+  animation: float 1.3s ease-in-out infinite alternate;
+}
+#books {
+  animation: float 1.4s ease-in-out infinite alternate;
+}
+#chair {
+  animation: float-up 1.5s ease-in-out infinite alternate;
+}
+#circles {
+  animation: float-up 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10%);
+  }
+}
+@keyframes float-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10%);
+  }
 }
